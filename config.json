@@ -1,0 +1,17 @@
+{
+    "bot": {
+        "email": "",
+        "password": "",
+        "owners": [
+            "HyperKiko",
+            "Sęcręcy"
+        ]
+    },
+    "web": {
+        "encryption_key": "gshiughdgjkdfgjkr",
+        "password": "pass"
+    },
+    "auto_updator": {
+        "github_raw_url": "https://raw.githubusercontent.com/HyperKiko/AuraBot/Beta"
+    }
+}
