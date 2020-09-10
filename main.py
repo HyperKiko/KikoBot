@@ -1,9 +1,22 @@
 import fortnitepy
 import os
+import sys
+import asyncio
 import fortnite_api
 import json
 from webserver import run_web_config
 from fortnitepy.ext import commands
+
+if sys.platform == 'win32':
+    asyncio.set_event_loop(asyncio.ProactorEventLoop())
+else:
+    try:
+        import uvloop
+    except ModuleNotFoundError:
+        pass
+    else:
+        asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+
 api = fortnite_api.FortniteAPI()
 
 
