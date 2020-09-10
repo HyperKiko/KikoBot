@@ -12,6 +12,7 @@
         "password": "pass"
     },
     "auto_updator": {
-        "github_raw_url": "https://raw.githubusercontent.com/HyperKiko/AuraBot/Beta"
+        "github_raw_url": "https://raw.githubusercontent.com/HyperKiko/KikoBot",
+        "enabled": true
     }
 }
