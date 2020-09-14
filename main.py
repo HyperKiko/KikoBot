@@ -4,7 +4,7 @@ import sys
 import asyncio
 import fortnite_api
 import json
-from webserver import run_web_config
+import webserver
 from fortnitepy.ext import commands
 
 if sys.platform == 'win32':
@@ -18,7 +18,6 @@ else:
         asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 api = fortnite_api.FortniteAPI()
-
 
 with open("config.json", "r") as file:
     config = json.load(file)
@@ -87,6 +86,6 @@ async def test(ctx):
     await ctx.send('test')
 
 
-run_web_config()
+webserver.run()
 if config["bot"]["password"] != "" and config["bot"]["email"] != "":
     client.run()

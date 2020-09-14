@@ -12,7 +12,8 @@
         "password": "pass"
     },
     "auto_updator": {
-        "github_raw_url": "https://raw.githubusercontent.com/HyperKiko/KikoBot",
+        "github_repository_owner": "HyperKiko",
+        "github_repository_name": "KikoBot",
         "enabled": true
     }
 }

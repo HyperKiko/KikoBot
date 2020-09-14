@@ -57,6 +57,6 @@ def web():
         app.run()
 
 
-def run_web_config():
+def run():
     t = Thread(target=web)
     t.start()
